@@ -1,4 +1,6 @@
-React Mineswipper is personal project using react to create the classical game mines wipper.
+React Mineswipper is a personal project using react to create the classical game mineswipper.
+
+Play [here](https://vanpeta.github.io/react-mineswipper/index)
 
 ## Used tools
 - Node.js --version 6.10.2
