@@ -20,8 +20,8 @@ export default function (state = { size: "", board: [] }, action) {
 			return newBoard;
 		case "INSERT_MINES":
 			const tileClicked = action.tileClicked;
-			// setting total number of mines to 5% of the board
-			let mines = (action.payload.board.length * 5) / 100;
+			// setting total number of mines to 20% of the board
+			let mines = (action.payload.board.length * 20) / 100;
 			newBoard = Object.assign({}, action.payload);
 			let randomArray = [];
 			let random = 0
