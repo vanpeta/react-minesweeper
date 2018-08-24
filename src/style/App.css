@@ -1,0 +1,204 @@
+body {
+	font-family: "Roboto Condensed",Helvetica,sans-serif;
+	font-weight: 300;
+}
+
+.gameOverContainer {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #f0f0f084;
+}
+.gameOverPannel {
+	width: 40%;
+	height: 40%;
+	margin: auto;
+	text-align: center;
+	position: relative;
+  top: 50%;
+	transform: translateY(-50%);
+	background-color: #ffffff;
+	border-radius: 25px;
+}
+
+.gameOverBox {
+	position: relative;
+  top: 50%;
+	transform: translateY(-50%);
+}
+
+header {
+  height: 10vh;
+  text-align: center;
+  color: #448aff;
+  font-size: 25px;
+  letter-spacing: .2em;
+}
+
+.settingBox {
+	text-align: center;
+	height: 130px;
+}
+
+.buttonsContainer {
+	height: 130px;
+}
+
+button {
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+  background-color: #448aff;
+  color: #ffffff;
+  cursor: pointer;
+	border-radius: 10px;
+	margin: 1vw;
+}
+
+.bestTimesComponent {
+	background-color: #f0f0f0;
+	width: 50vw;
+	margin: 0px auto 0px auto;
+}
+
+.bestTimesTitle {
+	padding: 10px 0px 10px 0px;
+	background-color: #448aff;
+	color: #ffffff;
+}
+
+.tableContainer {
+	width: 33%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.bestTimesTable {
+	width: 100%;
+	margin: 10px 0px;
+}
+th {
+	font-weight: 300;
+	padding: 0px 0px 10px 0px;
+}
+.bestTimeBox {
+	text-align: left;
+	margin: 5px 0px;
+	height: 10px;
+}
+.noTime {
+	text-align: center;
+}
+.bestTimePosition {
+	margin: 0px 10px 0px 0px;
+	padding: 0px 4px;
+	border: solid 2px #ffffff;
+	border-radius: 50%;
+}
+
+.bestTimeitem {
+	width: 50%;
+	margin: 0px auto 2px auto;
+	padding: 2px 10px;
+  background-color: #448aff;
+  color: #ffffff;
+  cursor: pointer;
+	border-radius: 10px;
+}
+
+.time {
+	color: #000000;
+}
+
+.restartButton {
+	display: block !important;
+	margin: 1vw auto;
+}
+
+.dashboardLeftPanel {
+	width: 60vw;
+	padding: 10px;
+	border-radius: 10px;
+	background-color: #448aff;
+	color: #ffffff;
+	margin: 0 20vw;
+	display: inline-block;
+	text-align: left;
+}
+
+.board {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.board-small {
+	width: 30vw;
+}
+
+.board-small > div {
+	width: 3vw;
+	height: 3vw;
+}
+
+.board-medium {
+	width: 50vw;
+}
+
+.board-medium > div {
+	width: 2.5vw;
+	height: 2.5vw;
+}
+
+.board-large {
+	width: 80vw;
+}
+
+.board-large > div {
+	width: 2.66vw;
+	height: 2.66vw;
+}
+
+.tile {
+	float: left;
+	cursor: pointer;
+	display: table;
+}
+
+.tile:focus {
+	outline: none;
+}
+
+.tileBox {
+	width: 100%;
+	height: 100%;
+	border: solid 1px #000000;
+	background-color: grey;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	color: #ffffff;
+}
+
+.cleared {
+	background-color: green !important;
+}
+
+.revealed {
+	background-color: red;
+}
+
+.flagged {
+	background-color: yellow !important;
+}
+
+.wrongFlagged {
+	background-color: orange !important;
+}
+
+.tileBox:hover {
+	border: solid 1px #ffffff;
+}
