@@ -1,3 +1,32 @@
+React Mineswipper is personal project using react to create the classical game mines wipper.
+
+## Used tools
+- Node.js --version 6.10.2
+- npm --version 3.10.10
+- create-react-app --version 1.5.2
+- git && github + github pages to deploy
+
+### Used npm pakages
+- react --version 16.4.2
+- react-dom --version 16.4.2
+- react-redux --version 5.0.7
+- react-scripts --version 1.1.4
+- redux --version 4.0.0
+- gh-pages --version 1.2.0
+
+The application uses your browser local storage to save your 5 personal times for each category.
+It also uses a recursive algorithm for the clearing tile functionality and the javascript async setInterval function to keep the time.
+
+Hope you enjoy it.
+
+Best.
+
+-------------------------------------
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
