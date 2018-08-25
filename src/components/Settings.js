@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import "../style/Settings.css";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 
@@ -14,16 +15,46 @@ class Settings extends Component {
 	}
 
 	handleClick(e) {
-		this.props.boardSizeSelected(e.target.value);
+		this.props.boardSizeSelected(e.target.id);
 	}
 
 	renderButtons() {
 		const buttons = (
-			<div>
+			<div className="settingBox">
 				<div className="buttonsContainer">
-					<button value="small" className="settingsButton" onClick={this.handleClick}>small</button>
-					<button value="medium" className="settingsButton" onClick={this.handleClick}>medium</button>
-					<button value="large" className="settingsButton" onClick={this.handleClick}>large</button>
+					<div id="small" className="settingsOption" onClick={this.handleClick}>
+						<div id="small"className="settingsOptionHeader">
+							Small
+						</div>
+						<div id="small" className="optionImage">
+							<img id="small"alt="small" src={require('../content/small.png')} />
+						</div>
+						<div id="small"className="settingsOptionFooter">
+							100 tiles with 20 mines.
+						</div>
+					</div>
+					<div id="medium" className="settingsOption" onClick={this.handleClick}>
+						<div id="medium" className="settingsOptionHeader">
+							Medium
+						</div>
+						<div id="medium" className="optionImage">
+							<img id="medium" alt="medium" src={require('../content/medium.png')} />
+						</div>
+						<div id="medium" className="settingsOptionFooter">
+							400 tiles and 80 mines.
+						</div>
+					</div>
+					<div id="large" className="settingsOption" onClick={this.handleClick}>
+						<div id="large" className="settingsOptionHeader">
+							Large
+						</div>
+						<div id="large" className="optionImage">
+							<img id="large" alt="large" src={require('../content/large.png')} />
+						</div>
+						<div id="large" className="settingsOptionFooter">
+							900 tiles and 180 mines.
+						</div>
+					</div>
 				</div>
 				<BestTimes />
 			</div>
@@ -32,7 +63,7 @@ class Settings extends Component {
 	}
 
 	render() {
-		return <div className="settingBox">{this.renderButtons()}</div>;
+		return <div>{this.renderButtons()}</div>;
 	}
 }
 

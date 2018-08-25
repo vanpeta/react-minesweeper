@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "../style/GameOverPanel.css";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 
