@@ -36,13 +36,19 @@ class GameOverPanel extends Component {
 
 	renderMessage() {
 		if (this.props.isAWinner) {
-			console.log("!!!!!", this.props.isAWinner);
-			return (
-				<div>Congratulations, you win. Your time is: <Time t={this.props.time} />
-				</div>
-			);
+			return <div>
+          Congratulations, you win. <span role="img" aria-label="clapping hands">
+            👏
+          </span>
+          <br />
+          Your time is: <Time t={this.props.time} />
+        </div>;
 		}
-		return <div>Game over, try again</div>; 
+		return (
+			<div>
+				Try Again <span role="img" aria-label="smiling face with smiling eyes">😊</span>
+			</div>
+		); 
 	}
 
   render() {
@@ -52,8 +58,15 @@ class GameOverPanel extends Component {
 				<div className="gameOverContainer">
 					<div className="gameOverPannel">
 						<div className="gameOverBox">
-							{this.renderMessage()}
-							<button className="restartButton" onClick={this.handleClick}>Close</button>
+							<div className="gameOverHeader">
+								<h1>Game Over</h1>
+							</div>
+							<div className="gameOverMessage">{this.renderMessage()}</div>
+							<div className="gameOverButtonBox">
+								<div className="gameOverButton" onClick={this.handleClick}>
+									CLOSE
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>

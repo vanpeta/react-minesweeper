@@ -20,13 +20,55 @@ body {
   top: 50%;
 	transform: translateY(-50%);
 	background-color: #ffffff;
-	border-radius: 25px;
+	box-shadow: rgba(0, 0, 0, 0.14) 0px 24px 38px 3px, rgba(0, 0, 0, 0.12) 0px 9px 46px 8px, rgba(0, 0, 0, 0.2) 0px 11px 15px -7px;
 }
 
 .gameOverBox {
 	position: relative;
   top: 50%;
 	transform: translateY(-50%);
+	height: 100%;
+}
+
+.gameOverHeader {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	background-color: rgb(96, 125, 139);
+	color: #ffffff;
+	text-align: left;
+}
+
+.gameOverHeader h1 {
+	font: 300 20px/24px Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+	padding-left: 16px;
+}
+
+.gameOverMessage {
+	position: relative;
+  top: 50%;
+	transform: translateY(-50%);
+}
+
+.gameOverButtonBox {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	border-top: 1px solid rgb(224, 224, 224);
+}
+
+.gameOverButton {
+	width: 15%;
+	line-height: 200%;
+	margin: 10px 10px 10px auto;
+	cursor: pointer;
+	color: #448aff;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.gameOverButton:hover {
+	background-color: rgb(238, 238, 238);
 }
 
 header {
