@@ -11,7 +11,7 @@ class App extends Component {
       <div className="">
         <GameOverPanel />
         <header className="">
-          <h1 className="App-title">Minesweepper</h1>
+          <h1 className="App-title">Minesweeper</h1>
         </header>
         <Settings />
         <Board />
