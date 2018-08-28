@@ -4,6 +4,7 @@ import '../style/App.css';
 import Logo from "./Logo";
 import Board from "./Board";
 import Settings from "./Settings";
+import Tutorial from "./Tutorial";
 import GameOverPanel from "./GameOverPanel";
 
 class App extends Component {
@@ -11,6 +12,7 @@ class App extends Component {
     return (
       <div className="">
         <GameOverPanel />
+        <Tutorial />
         <Logo />
         <Settings />
         <Board />
