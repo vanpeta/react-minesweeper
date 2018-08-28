@@ -24,7 +24,7 @@ class Dashboard extends Component {
 		this.props.clearBoard();
 		this.props.isAWinner(false, "");
 		this.props.revealBoard(false);
-		return this.props.start(this.props.started);
+		return this.props.start(false);
 	}
 
 	render() {
@@ -33,11 +33,11 @@ class Dashboard extends Component {
 							<div>Mines Flagged: {this.minesFlagged()}</div>
 							<div>Total Mines: {this.numberOfMines()}</div>
 							<Timer />
-						</div>
 							<button className="restartButton" onClick={this.handleClick}>
 								restart
 							</button>
-					 </div>;
+						</div>
+					</div>;
 	}
 }
 

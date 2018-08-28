@@ -30,7 +30,7 @@ class Tile extends Component {
     }
     // initialize game
     else if (!this.props.started) {
-      this.props.start(this.props.started);
+      this.props.start(true);
       this.props.insertMines(this.props.board, this.props.id);
     }
 		// lose game

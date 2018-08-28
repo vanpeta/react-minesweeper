@@ -13,7 +13,7 @@ export default function (state = { size: "", board: [] }, action) {
 				board.length = 900;
 			}
 			while (id < board.length) {
-				board[id] = { id: id, isMine: false, isCleared: false, isFlagged: false, neighbords: [] };
+				board[id] = { id, isMine: false, isCleared: false, isFlagged: false, neighbords: [] };
 				id++;
 			}
 			let newBoard = { size: action.payload, board};

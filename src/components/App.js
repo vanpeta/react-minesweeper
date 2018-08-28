@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../style/App.css';
 
+import Logo from "./Logo";
 import Board from "./Board";
 import Settings from "./Settings";
 import GameOverPanel from "./GameOverPanel";
@@ -10,9 +11,7 @@ class App extends Component {
     return (
       <div className="">
         <GameOverPanel />
-        <header className="">
-          <h1 className="App-title">Minesweeper</h1>
-        </header>
+        <Logo />
         <Settings />
         <Board />
       </div>

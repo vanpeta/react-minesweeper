@@ -1,19 +1,25 @@
+* {
+padding: 0;
+margin: 0;
+}
+
+html, body {
+		margin:0;
+		padding:0;
+		min-width: 100%;
+		min-height: 100vh;
+}
 body {
 	font-family: "Roboto Condensed",Helvetica,sans-serif;
 	font-weight: 300;
-}
-
-header {
-  text-align: center;
-  color: #448aff;
-  font-size: 25px;
-  letter-spacing: .2em;
+	background-color: rgb(247, 247, 247);
 }
 
 .bestTimesComponent {
 	background-color: #f0f0f0;
-	width: 50vw;
+	width: 75vw;
 	margin: 0px auto 0px auto;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12);
 }
 
 .bestTimesTitle {
@@ -36,10 +42,12 @@ th {
 	font-weight: 300;
 	padding: 0px 0px 10px 0px;
 }
+
 .bestTimeBox {
 	text-align: left;
 	margin: 5px 0px;
 	height: 10px;
+	/* border-bottom: 1px solid #e0e0e0; */
 }
 .noTime {
 	text-align: center;
@@ -70,14 +78,18 @@ th {
 	margin: 1vw auto;
 }
 
-.dashboardLeftPanel {
-	width: 60vw;
-	padding: 10px;
-	border-radius: 10px;
+.dashboard {
+	width: 100%;
+	margin: 0 auto;
+	height: 20vw;
 	background-color: #448aff;
+}
+
+.dashboardLeftPanel {
+	width: 75vw;
+	margin: 0 auto;
+	padding: 10px;	
 	color: #ffffff;
-	margin: 0 20vw;
-	display: inline-block;
 	text-align: left;
 }
 
