@@ -26,7 +26,13 @@ class Board extends Component {
 	}
 
 	render() {
-		return <div className={"board board-" + this.props.board.size}>{this.renderTitles()}</div>;
+		return (
+			<div className="board">
+				<div className={"board-" + this.props.board.size}>
+					{this.renderTitles()}
+				</div>
+			</div>
+		);
 	}
 }
 

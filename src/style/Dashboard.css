@@ -3,7 +3,7 @@
 	top: 55px;
 	bottom: 0;
 	display: inline-block;
-	width: 20vw;
+	width: 19vw;
 	background-color: #448aff;
 	box-shadow: rgba(0, 0, 0, 0.28) 0px 0.671533px 8px;
 	transform: translateX(-20vw);
@@ -19,7 +19,7 @@
 }
 
 .dashboardLeftPanel {
-	width: 18vw;
+	width: 17vw;
 	padding: 10px;	
 	color: #ffffff;
 	text-align: left;
