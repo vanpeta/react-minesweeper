@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import "../style/Dashboard.css";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 
@@ -30,12 +31,12 @@ class Dashboard extends Component {
 	render() {
 		return <div className="dashboard">
 						<div className="dashboardLeftPanel">
-							<div>Mines Flagged: {this.minesFlagged()}</div>
-							<div>Total Mines: {this.numberOfMines()}</div>
-							<Timer />
-							<button className="restartButton" onClick={this.handleClick}>
-								restart
-							</button>
+							<div className="data">Mines Flagged: {this.minesFlagged()}</div>
+							<div className="data">Total Mines: {this.numberOfMines()}</div>
+							<div className="data"><Timer /></div>
+							<div className="restartButton" onClick={this.handleClick}>
+								RESTART
+							</div>
 						</div>
 					</div>;
 	}

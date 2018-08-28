@@ -73,26 +73,6 @@ th {
 	color: #000000;
 }
 
-.restartButton {
-	display: block !important;
-	margin: 1vw auto;
-}
-
-.dashboard {
-	width: 100%;
-	margin: 0 auto;
-	height: 20vw;
-	background-color: #448aff;
-}
-
-.dashboardLeftPanel {
-	width: 75vw;
-	margin: 0 auto;
-	padding: 10px;	
-	color: #ffffff;
-	text-align: left;
-}
-
 .board {
 	margin-left: auto;
 	margin-right: auto;

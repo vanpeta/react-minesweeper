@@ -36,7 +36,7 @@
 
 .gameOverHeader h1 {
 	font: 300 20px/24px Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
-	padding-left: 16px;
+	padding: 16px;
 }
 
 .gameOverMessage {
