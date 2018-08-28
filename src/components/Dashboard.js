@@ -10,6 +10,7 @@ import Timer from "./Timer";
 class Dashboard extends Component {
 	constructor(props) {
 		super(props);
+		this.state = { className: "dashboard" };
 		this.handleClick = this.handleClick.bind(this);
 	}
 
@@ -28,8 +29,15 @@ class Dashboard extends Component {
 		return this.props.start(false);
 	}
 
+	componentDidMount() {
+		console.log("ssss")
+		requestAnimationFrame(() => {
+			this.setState({ className: "dashboard slideIn" });
+		});
+	}
+
 	render() {
-		return <div className="dashboard">
+		return <div className={this.state.className}>
 						<div className="dashboardLeftPanel">
 							<div className="data">Mines Flagged: {this.minesFlagged()}</div>
 							<div className="data">Total Mines: {this.numberOfMines()}</div>
@@ -44,8 +52,7 @@ class Dashboard extends Component {
 
 function mapStateToProps(state) {
 	return {
-		board: state.board,
-		started: state.isStarted
+		board: state.board
 	}
 }
 
