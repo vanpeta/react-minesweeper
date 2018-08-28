@@ -13,8 +13,8 @@ class Timer extends Component {
     this.tick = this.tick.bind(this);
   }
 
-  componentDidMount() {
-    if (this.props.started) {
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.started && !nextProps.revealed) {
       this.startTimer();
     }
   }
@@ -36,6 +36,7 @@ class Timer extends Component {
 	}
 
   render() {
+    console.log("!!!!!", this.props.started);
 		return (
 			<div>
         Time: <Time t={this.state.time} />

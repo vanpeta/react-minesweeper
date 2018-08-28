@@ -37,16 +37,18 @@ class Dashboard extends Component {
 	}
 
 	render() {
-		return <div className={this.state.className}>
-						<div className="dashboardLeftPanel">
-							<div className="data">Mines Flagged: {this.minesFlagged()}</div>
-							<div className="data">Total Mines: {this.numberOfMines()}</div>
-							<div className="data"><Timer /></div>
-							<div className="restartButton" onClick={this.handleClick}>
-								RESTART
-							</div>
-						</div>
-					</div>;
+		return (
+			<div className={this.state.className}>
+				<div className="dashboardLeftPanel">
+					<div className="data">Mines Flagged: {this.minesFlagged()}</div>
+					<div className="data">Total Mines: {this.numberOfMines()}</div>
+					<div className="data"><Timer /></div>
+					<div className="restartButton" onClick={this.handleClick}>
+						RESTART
+					</div>
+				</div>
+			</div>
+		);
 	}
 }
 

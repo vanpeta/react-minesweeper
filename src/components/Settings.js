@@ -5,7 +5,6 @@ import { bindActionCreators } from "redux";
 
 import { boardSizeSelected } from "../actions/index";
 
-import Dashboard from "./Dashboard";
 import BestTimes from "./BestTimes";
 
 class Settings extends Component {
@@ -30,7 +29,7 @@ class Settings extends Component {
 							<img id="small"alt="small" src={require('../content/small.png')} />
 						</div>
 						<div id="small"className="settingsOptionFooter">
-							100 tiles with 20 mines.
+							100 tiles with 15 mines.
 						</div>
 					</div>
 					<div id="medium" className="settingsOption" onClick={this.handleClick}>
@@ -41,7 +40,7 @@ class Settings extends Component {
 							<img id="medium" alt="medium" src={require('../content/medium.png')} />
 						</div>
 						<div id="medium" className="settingsOptionFooter">
-							400 tiles and 80 mines.
+							400 tiles and 60 mines.
 						</div>
 					</div>
 					<div id="large" className="settingsOption" onClick={this.handleClick}>
@@ -52,14 +51,14 @@ class Settings extends Component {
 							<img id="large" alt="large" src={require('../content/large.png')} />
 						</div>
 						<div id="large" className="settingsOptionFooter">
-							900 tiles and 180 mines.
+							900 tiles and 135 mines.
 						</div>
 					</div>
 				</div>
 				<BestTimes />
 			</div>
 		)
-		return !this.props.started && !this.props.size ? buttons : <Dashboard />;
+		return !this.props.board.size ? buttons : null;
 	}
 
 	render() {
