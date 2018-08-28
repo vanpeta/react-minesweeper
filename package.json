@@ -1,6 +1,6 @@
 {
-  "name": "react-mineswipper",
-  "homepage": "http://vanpeta.github.io/react-mineswipper",
+  "name": "react-minesweeper",
+  "homepage": "http://vanpeta.github.io/react-minesweeper",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
