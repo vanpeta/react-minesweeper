@@ -39,9 +39,7 @@ class Tutorial extends Component {
 		return "Select board size";
 	}
 	render() {
-		console.log("zzzzzz", localStorage.getItem("hideTutorial"));
 		if (localStorage.getItem("hideTutorial") || !this.state.show) {
-      console.log("!!!!!!!", localStorage.getItem("hideTutorial"));
       return null;
     }
 		let checkmark = null;
