@@ -34,9 +34,11 @@ class Tutorial extends Component {
 
 	tutorialMessage() {
 		if (this.props.started) {
-      return "To flag mines press the space bar";
-    }
-		return "Select board size";
+      return "To flag mines press the space bar.";
+    } else if (this.props.size && !this.props.started) {
+			return "Click on any tile to start."
+		}
+		return "Select board size.";
 	}
 	render() {
 		if (localStorage.getItem("hideTutorial") || !this.state.show) {
@@ -71,7 +73,7 @@ class Tutorial extends Component {
 
 function mapStateToProps(state) {
   return {
-    started: state.isStarted
+    started: state.isStarted, size: state.board.size
   };
 }
 
