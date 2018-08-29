@@ -34,11 +34,11 @@ class Tutorial extends Component {
 
 	tutorialMessage() {
 		if (this.props.started) {
-      return "To flag mines press the space bar.";
+			return <div className="tutorialMessage">To flag mines press the space bar.<span>3 of 3</span></div>;
     } else if (this.props.size && !this.props.started) {
-			return "Click on any tile to start."
+			return <div className="tutorialMessage">Click on any tile to start.<span>2 of 3</span></div>;
 		}
-		return "Select board size.";
+		return <div className="tutorialMessage">Select board size.<span>1 of 3</span></div>;
 	}
 	render() {
 		if (localStorage.getItem("hideTutorial") || !this.state.show) {

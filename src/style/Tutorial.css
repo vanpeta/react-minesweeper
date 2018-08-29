@@ -20,6 +20,12 @@
 	margin-bottom: 10px;
 }
 
+
+
+.tutorialMessage > span {
+	float: right;
+}
+
 .tutorialButtonContainer {
 	text-align: right;
 }
