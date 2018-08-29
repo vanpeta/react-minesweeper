@@ -6,6 +6,9 @@ import Time from "./Time";
 
 class BestTimesDashboard extends Component {
 	renderTimes() {
+		if (this.props.bestimes[this.props.size].length < 1) {
+			return "No times yet"
+		}
 		return this.props.bestimes[this.props.size].map( (t, i) => {
 			return (
 				<div key={i}>

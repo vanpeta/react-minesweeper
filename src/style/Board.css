@@ -2,13 +2,15 @@
 	display: inline-block;
 	width: 80vw;
 	margin-left: 19vw;
+	opacity: 0;
 	transform: translateY(60vh);
-	transition: transform 400ms ease-in-out;
+	transition: transform 400ms ease-in-out, opacity 1000ms;
 
 }
 
 .slideIn {
 	transform: translateY(0);
+	opacity: 1;
 }
 
 .board-small {
