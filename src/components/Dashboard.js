@@ -6,6 +6,7 @@ import { bindActionCreators } from "redux";
 import { start, clearBoard, revealBoard, isAWinner } from "../actions/index";
 
 import Timer from "./Timer";
+import BestTimesDashboard from "./BestTimesDashboard";
 
 class Dashboard extends Component {
 	constructor(props) {
@@ -45,6 +46,9 @@ class Dashboard extends Component {
 					<div className="data"><Timer /></div>
 					<div className="restartButton" onClick={this.handleClick}>
 						RESTART
+					</div>
+					<div className="data">
+						<BestTimesDashboard />
 					</div>
 				</div>
 			</div>

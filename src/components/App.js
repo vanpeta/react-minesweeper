@@ -13,7 +13,12 @@ import Dashboard from "./Dashboard";
 class App extends Component {
   renderDashboard() {
     if (this.props.size) {
-      return <Dashboard />
+      return (
+        <div>
+          <Dashboard />
+          <Board />
+        </div>
+      )
     }
     return null
   }
@@ -25,7 +30,6 @@ class App extends Component {
         <Logo />
         <Settings />
         {this.renderDashboard()}
-        <Board />
       </div>
     );
   }

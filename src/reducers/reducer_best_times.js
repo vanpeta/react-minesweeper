@@ -12,8 +12,7 @@ export default function (state = initialState(), action) {
   switch (action.type) {
 		case "UPDATE_BEST_TIMES":
 			let bestTimes = initialState();
-			let size = Object.keys(action.payload)[0]; 
-			console.log("size", size);
+			let size = Object.keys(action.payload)[0];
 			bestTimes[size] = action.payload[size];
 			localStorage.setItem("bestTimes", JSON.stringify(bestTimes));
 			return state;

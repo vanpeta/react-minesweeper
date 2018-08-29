@@ -36,7 +36,6 @@ class Timer extends Component {
 	}
 
   render() {
-    console.log("!!!!!", this.props.started);
 		return (
 			<div>
         Time: <Time t={this.state.time} />
