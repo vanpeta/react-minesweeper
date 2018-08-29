@@ -14,10 +14,6 @@
 	transform: translateX(0);
 }
 
-.slideOut {
-	transform: translateX(-20vw);
-}
-
 .dashboardLeftPanel {
 	width: 17vw;
 	padding: 10px;	

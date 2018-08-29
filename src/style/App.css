@@ -74,43 +74,6 @@ th {
 	color: #000000;
 }
 
-.board {
-	display: inline-block;
-	width: 80vw;
-	margin-left: 19vw;
-
-}
-
-.board-small {
-	width: 40%;
-	margin: 0px auto 0px auto;
-}
-
-.board-small > div {
-	width: 3vw;
-	height: 3vw;
-}
-
-.board-medium {
-	width: 65%;
-	margin: 0px auto 0px auto;
-}
-
-.board-medium > div {
-	width: 2.5vw;
-	height: 2.5vw;
-}
-
-.board-large {
-	width: 100%;
-	margin: 0px auto 0px auto;
-}
-
-.board-large > div {
-	width: 2.7vw;
-	height: 2.7vw;
-}
-
 .tile {
 	float: left;
 	cursor: pointer;

@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
 import { connect } from "react-redux";
-
+import "../style/Board.css";
 import Tile from "./Tile";
 
 class Board extends Component {
+	constructor(props) {
+		super(props);
+		this.state = { className: "board" }
+	}
 
 	renderTitles() {
 		const board = this.props.board.board;
@@ -25,9 +29,15 @@ class Board extends Component {
 		}
 	}
 
+	componentDidMount() {
+		requestAnimationFrame(() => {
+			this.setState({ className: "board slideIn" });
+		});
+	}
+
 	render() {
 		return (
-			<div className="board">
+			<div className={this.state.className}>
 				<div className={"board-" + this.props.board.size}>
 					{this.renderTitles()}
 				</div>
